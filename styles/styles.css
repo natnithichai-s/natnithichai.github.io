@@ -1,0 +1,69 @@
+div {
+    background-color: rgb(185, 185, 185);
+    width: 1000px;
+    border: 15px solid rgb(128, 6, 0);
+    margin: auto;
+    text-align: center; /* Center the content inside the div */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+p {
+    color: blue;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: crimson;
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold; /* Use font-weight instead of font-style for bold */
+}
+
+a {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 10px 0px 10px;
+    width: 200px; /* Adjust the width as needed */
+    color: rgb(123, 3, 3);
+    border: 3px solid rgb(123, 3, 3);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    padding: 0;
+    border: 3px solid rgb(128, 0, 0);
+    text-align: center;
+}
+
+li {
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li.popular {
+    border: 4px red dotted;
+}
+
+figcaption {
+    margin: 5px 0;
+    font-family: sans-serif;
+}
+
+figure.centered-figure {
+    margin: 20px auto; /* Center the figure */
+}
