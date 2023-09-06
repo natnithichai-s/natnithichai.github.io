@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color changing pew peww</title>
+    <style>
+        div {
+            display: flex;
+            background-color: rgb(250, 255, 105);
+            height: 150px;
+            width: 25%;
+            float: left;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script defer>
+        (function() {
+            // Create 16 div elements and append them to the body
+            for (let i = 1; i <= 16; i++) {
+                const myDiv = document.createElement('div');
+                document.body.appendChild(myDiv);
+            }
+        
+            // Generate a random number up to the specified value
+            const random = number => Math.floor(Math.random() * number);
+        
+            // Generate a random background color
+            const bgChange = () => {
+                const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+                return rndCol;
+            };
+        
+            // Select all the div elements
+            const divs = document.getElementsByTagName('div');
+        
+            // Add click event listeners to change background color for columns 1 and 3
+            Array.from(divs).forEach((div, index) => {
+                const columnIndex = index % 4; // 0-based index of the column (0 to 3)
+        
+                if (columnIndex === 0) {
+                    div.addEventListener('click', e => {
+                        e.target.style.backgroundColor = bgChange();
+                    });
+                } else if (columnIndex === 2) {
+                    div.addEventListener('click', e => {
+                        e.target.style.backgroundColor = bgChange();
+                    });
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
